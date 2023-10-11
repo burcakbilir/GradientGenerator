@@ -1,0 +1,162 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  letter-spacing: -3px;
+  font-size: 3rem;
+}
+h2 {
+  font-family: "Inter", sans-serif;
+  letter-spacing: -2px;
+  font-size: 2rem;
+}
+h3 {
+  font-size: 18px;
+}
+.code {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+span {
+  letter-spacing: -1px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: grey;
+}
+.main {
+  text-align: center;
+}
+.card-bg {
+  background-image: linear-gradient(135deg, #ee95f6 10%, #8bf3fb 100%);
+  height: 390px;
+  border-radius: 5px;
+}
+
+.card-select {
+  height: 390px;
+}
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -1px;
+}
+
+#colorOne {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#colorOne::-webkit-color-swatch {
+  border-radius: 2px;
+  border: none;
+}
+#colorOne::-moz-color-swatch {
+  border-radius: 2px;
+  border: none;
+}
+
+#colorTwo {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#colorTwo::-webkit-color-swatch {
+  border-radius: 2px;
+  border: none;
+}
+#colorTwo::-moz-color-swatch {
+  border-radius: 2px;
+  border: none;
+}
+.fa-solid {
+  padding-right: 10px;
+}
+.changeColorBtn {
+  font-family: "Inter", sans-serif;
+  margin-top: 15px;
+}
+
+.input-group-text {
+  background-color: white;
+}
+.card1 {
+  background-image: linear-gradient(135deg, #00ff87 10%, #60efff 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card2 {
+  background-image: linear-gradient(135deg, #0061ff 10%, #60efff 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card3 {
+  background-image: linear-gradient(135deg, #ff930f 10%, #fff95b 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card4 {
+  background-image: linear-gradient(135deg, #ff0f7b 10%, #f89b29 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card5 {
+  background-image: linear-gradient(135deg, #696eff 10%, #f8acff 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card6 {
+  background-image: linear-gradient(135deg, #9bafd9 10%, #103783 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card7 {
+  background-image: linear-gradient(135deg, #fbd07c 10%, #f7f779 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card8 {
+  background-image: linear-gradient(135deg, #f6d5f7 10%, #fbe9d7 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card9 {
+  background-image: linear-gradient(135deg, #57ebde 10%, #aefb2a 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card10 {
+  background-image: linear-gradient(135deg, #b597f6 10%, #96c6ea 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card11 {
+  background-image: linear-gradient(135deg, #9fccfa 10%, #0974f1 100%);
+  height: 200px;
+  border-radius: 5px;
+}
+.card12 {
+  background-image: linear-gradient(135deg, #ffb88e 10%, #ea5753 100%);
+  height: 200px;
+  border-radius: 5px;
+}

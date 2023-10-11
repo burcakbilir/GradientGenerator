@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img src="gradient-hue-logo.png" alt="" width="50px" />
+          <span class="fs-4">Gradient Generator</span>
+        </a>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="row text-center title m-5">
+        <div class="col-12">
+          <h1>Generate a CSS Color Gradient</h1>
+          <p>Easily Create and Export Gorgeous Gradients</p>
+        </div>
+      </div>
+      <div class="row main">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body card-bg"></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body card-select">
+              <h5 class="card-title mb-3 m-0 p-0">Choose Colors</h5>
+              <hr />
+              <div class="input-group mb-3">
+                <div class="input-group-text">
+                  <input
+                    class="form-color-input mt-0"
+                    name="color1"
+                    type="color"
+                    id="colorOne"
+                    value="#ee95f6"
+                    aria-label="Color for following text input"
+                  />
+                </div>
+                <input
+                  type="text"
+                  class="form-control input1"
+                  aria-label="Text input with checkbox"
+                  placeholder="#ee95f6"
+                  readonly
+                />
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-text">
+                  <input
+                    class="form-color-input mt-0"
+                    name="color2"
+                    type="color"
+                    id="colorTwo"
+                    value="#8bf3fb"
+                    aria-label="Color for following text input"
+                  />
+                </div>
+                <input
+                  type="text"
+                  class="form-control input2"
+                  aria-label="Text input with checkbox"
+                  placeholder="#8bf3fb"
+                  readonly
+                />
+              </div>
+              <a
+                href=""
+                class="btn btn-primary changeColorBtn copyCssCode"
+                onclick="copied()"
+                ><i class="fa-solid fa-rocket"></i>Copy Css Code</a
+              >
+
+              <div class="code">
+                <h3>
+                  linear-gradient(135deg, rgb(239, 128, 249), rgb(8, 121, 129));
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row text-center m-5">
+        <div class="col-12">
+          <h2>Example Gradients</h2>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body card1"></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body card2"></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body card3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <div class="card">
+              <div class="card-body card4"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body card5"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body card6"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <div class="card">
+              <div class="card-body card7"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body card8"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body card9"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <div class="card">
+              <div class="card-body card10"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body card11"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body card12"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >Gradient Hue
+            <i class="fa-solid fa-heart" style="color: #f95d64"></i>by Burçak
+            Bilir</span
+          >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
